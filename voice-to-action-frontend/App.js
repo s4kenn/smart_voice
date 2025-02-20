@@ -36,7 +36,6 @@ export default function App() {
         playsInSilentModeIOS: true,
       });
 
-      // Updated recording configuration
       const { recording } = await Audio.Recording.createAsync({
         android: {
           extension: '.mp3',
@@ -104,9 +103,9 @@ export default function App() {
         headers: {
           'Content-Type': 'multipart/form-data',
         },
-        timeout: 300000, // 5 minute timeout
-        maxContentLength: 50 * 1024 * 1024, // 50MB
-        maxBodyLength: 50 * 1024 * 1024 // 50MB
+        timeout: 300000,
+        maxContentLength: 50 * 1024 * 1024,
+        maxBodyLength: 50 * 1024 * 1024
       });
 
       if (response.data.status === 'success') {
