@@ -1,11 +1,11 @@
 {
   "name": "speech-to-text-backend",
   "version": "1.0.0",
-  "main": "try.js",
+  "main": "index.js",
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon try.js"
+    "dev": "nodemon index.js"
   },
   "keywords": [],
   "author": "",
